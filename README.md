@@ -1,12 +1,88 @@
-# React + Vite
+# Movie Display Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web app to search, browse, and favorite movies using the TMDB API.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Search for movies by title
+- Browse popular movies
+- Add/remove movies to your favorites
+- Responsive UI
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+
+### Setup
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/your-username/your-repo-name.git
+   cd Movie-Display-Web/frontend
+   ```
+
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+
+3. **Configure environment variables:**
+
+   - Create a `.env` file in the `frontend` directory:
+     ```
+     VITE_TMDB_API_KEY=your_tmdb_api_key_here
+     ```
+
+   - **Do not share your API key publicly.**
+
+4. **Start the development server:**
+   ```sh
+   npm run dev
+   ```
+
+   The app will be available at [http://localhost:5173](http://localhost:5173) (or as shown in your terminal).
+
+### Build for Production
+
+```sh
+npm run build
+```
+
+### Preview Production Build
+
+```sh
+npm run preview
+```
+
+## Deployment
+
+You can deploy the `dist` folder to any static hosting service (Vercel, Netlify, GitHub Pages, etc.).  
+Make sure to set the `VITE_TMDB_API_KEY` environment variable in your deployment settings.
+
+## Project Structure
+
+```
+frontend/
+├── public/
+├── src/
+│   ├── components/
+│   ├── contexts/
+│   ├── css/
+│   ├── pages/
+│   └── services/
+├── .env
+├── .gitignore
+├── package.json
+└── vite.config.js
+```
+
+## License
+
+MIT
+
+---
+
+**Made with ❤️ using React and Vite**
