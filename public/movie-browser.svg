@@ -1,0 +1,25 @@
+<!-- Detailed Movie Clapperboard Icon (White) -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="48" height="48"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="white"
+  stroke-width="2"
+  stroke-linecap="square"
+  stroke-linejoin="miter"
+>
+  <title>Movie Clapperboard</title>
+  
+  <!-- Top clapper (hinged part) -->
+  <path d="M2 5h20v4H2z" />
+
+  <!-- Stripes on clapper -->
+  <path d="M4 5l3-3h4l-3 3zM11 5l3-3h4l-3 3zM18 5l3-3" />
+
+  <!-- Board body -->
+  <rect x="2" y="9" width="20" height="13" rx="1" />
+
+  <!-- Optional play symbol inside -->
+  <polygon points="10,13 10,18 15,15.5" fill="white" stroke="none"/>
+</svg>
